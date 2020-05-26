@@ -17,8 +17,8 @@ def start():
 
                 if len(message) != 0 and len(message) < 280:
                     if "curcol!" in message or "Curcol!" in message:
-                        msg = message.replace("curcol!",sender_id + " -")
-                        msg = msg.replace("Curcol!",sender_id + " -")
+                        msg = message.replace("curcol!"," [" + sender_id + "] ")
+                        msg = msg.replace("Curcol!"," [" + sender_id + "] ")
                         if len(message) != 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
